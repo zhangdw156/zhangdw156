@@ -11,7 +11,3 @@
 <p align="left">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=zhangdw156&layout=compact&hide_progress=true" alt="zhangdw156" />
 </p>
-
-<p align="left">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=zhangdw156&" alt="zhangdw156" />
-</p>
