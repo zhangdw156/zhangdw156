@@ -21,6 +21,7 @@ jobs:
           options: username=zhangdw156&show_icons=true&locale=en
           path: profile-stats/stats.svg
           token: ${{ secrets.PROFILE_TOKEN }}
+          core_version: 1.2.0
           fail_on_error: true
 
       - name: Generate top languages card
@@ -30,6 +31,7 @@ jobs:
           options: username=zhangdw156&layout=compact&hide_progress=true
           path: profile-stats/top-langs.svg
           token: ${{ secrets.PROFILE_TOKEN }}
+          core_version: 1.2.0
           fail_on_error: true
 
       - name: Commit updated cards
