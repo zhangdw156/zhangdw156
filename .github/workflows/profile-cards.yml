@@ -14,12 +14,43 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - uses: vn7n24fzkq/github-profile-summary-cards@release
-        env:
-          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN }}
-        with:
-          USERNAME: zhangdw156
-          BRANCH_NAME: main
-          UTC_OFFSET: 8
-          AUTO_PUSH: true
-          THEME: github
+      - name: Download profile cards
+        run: |
+          set -euo pipefail
+          mkdir -p profile-stats
+          temp_dir="$(mktemp -d)"
+
+          curl --fail --location \
+            --retry 5 --retry-all-errors \
+            --connect-timeout 15 --max-time 90 \
+            "https://github-readme-stats.vercel.app/api?username=zhangdw156&show_icons=true&locale=en" \
+            --output "${temp_dir}/stats.svg"
+
+          curl --fail --location \
+            --retry 5 --retry-all-errors \
+            --connect-timeout 15 --max-time 90 \
+            "https://github-readme-stats.vercel.app/api/top-langs/?username=zhangdw156&layout=compact&hide_progress=true" \
+            --output "${temp_dir}/top-langs.svg"
+
+          for card in stats.svg top-langs.svg; do
+            grep -q "<svg" "${temp_dir}/${card}"
+            if grep -Eqi "Something went wrong|Could not fetch|Rate Limit" "${temp_dir}/${card}"; then
+              exit 1
+            fi
+          done
+
+          mv "${temp_dir}/stats.svg" profile-stats/stats.svg
+          mv "${temp_dir}/top-langs.svg" profile-stats/top-langs.svg
+
+      - name: Commit updated cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile-stats/stats.svg profile-stats/top-langs.svg
+
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+
+          git commit -m "Update GitHub profile stats"
+          git push

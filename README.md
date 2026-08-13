@@ -5,9 +5,9 @@
 </p>
 
 <p align="left">
-  <img src="./profile-summary-card-output/github/3-stats.svg" alt="GitHub stats" />
+  <img src="./profile-stats/stats.svg" alt="GitHub stats" />
 </p>
 
 <p align="left">
-  <img src="./profile-summary-card-output/github/2-most-commit-language.svg" alt="Top languages" />
+  <img src="./profile-stats/top-langs.svg" alt="Top languages" />
 </p>
