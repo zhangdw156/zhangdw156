@@ -20,7 +20,7 @@ jobs:
           card: stats
           options: username=zhangdw156&show_icons=true&locale=en
           path: profile-stats/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PROFILE_TOKEN }}
           fail_on_error: true
 
       - name: Generate top languages card
@@ -29,7 +29,7 @@ jobs:
           card: top-langs
           options: username=zhangdw156&layout=compact&hide_progress=true
           path: profile-stats/top-langs.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PROFILE_TOKEN }}
           fail_on_error: true
 
       - name: Commit updated cards
