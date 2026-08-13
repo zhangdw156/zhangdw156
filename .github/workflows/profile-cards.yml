@@ -1,0 +1,25 @@
+name: Generate profile cards
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "15 0 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+        with:
+          USERNAME: zhangdw156
+          BRANCH_NAME: main
+          UTC_OFFSET: 8
+          AUTO_PUSH: true
+          THEME: github

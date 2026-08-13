@@ -5,9 +5,9 @@
 </p>
 
 <p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=zhangdw156&show_icons=true&locale=en" alt="zhangdw156" />
+  <img src="./profile-summary-card-output/github/3-stats.svg" alt="GitHub stats" />
 </p>
 
 <p align="left">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=zhangdw156&layout=compact&hide_progress=true" alt="zhangdw156" />
+  <img src="./profile-summary-card-output/github/2-most-commit-language.svg" alt="Top languages" />
 </p>
