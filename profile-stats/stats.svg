@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">zhangdw156&#39;s GitHub Stats, Rank: B+</title>
-        <desc id="descId">Total Stars Earned: 13, Total Commits  (last year) : 4389, Total PRs: 390, Total Issues: 408, Contributed to (last year): 6</desc>
+        <desc id="descId">Total Stars Earned: 13, Total Commits  (last year) : 4392, Total PRs: 390, Total Issues: 408, Contributed to (last year): 6</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 99.03404209491367;
+        stroke-dashoffset: 99.03404029435289;
       }
     }
   
