@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="280" height="34" viewBox="0 0 280 34" fill="none" role="img" aria-labelledby="title desc">
-  <title id="title">Hugging Face · zhangdw · 37,242 downloads</title>
-  <desc id="desc">zhangdw on Hugging Face. 37,242 all-time downloads across public models and datasets.</desc>
+  <title id="title">Hugging Face · zhangdw · 37,511 downloads</title>
+  <desc id="desc">zhangdw on Hugging Face. 37,511 all-time downloads across public models and datasets.</desc>
   <style>
     text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 13px; }
     .account { font-weight: 600; fill: #e6edf3; }
@@ -51,5 +51,5 @@
   <g transform="translate(114 10)" stroke="#9198a1" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
     <path d="M7 1v8m-3-3 3 3 3-3M1 10v3h12v-3" />
   </g>
-  <text x="136" y="21.5" class="number">37,242<tspan class="label"> downloads</tspan></text>
+  <text x="136" y="21.5" class="number">37,511<tspan class="label"> downloads</tspan></text>
 </svg>
