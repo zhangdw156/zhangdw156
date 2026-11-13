@@ -24,13 +24,13 @@ ROOT = Path(__file__).resolve().parents[1]
 TEMPLATE = Path(__file__).with_name("huggingface-card.svg")
 OUTPUT_DIR = ROOT / "profile-stats"
 PALETTES = {
-    "huggingface.svg": {
+    "huggingface-panel.svg": {
         "background": "#ffffff",
         "border": "#d1d9e0",
         "heading": "#24292f",
         "muted": "#59636e",
     },
-    "huggingface-dark.svg": {
+    "huggingface-panel-dark.svg": {
         "background": "#0d1117",
         "border": "#3d444d",
         "heading": "#e6edf3",
