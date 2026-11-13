@@ -111,7 +111,7 @@ class DownloadStatsTests(unittest.TestCase):
                 ns = {"svg": "http://www.w3.org/2000/svg"}
                 numbers = root.findall(".//svg:text[@class='number']", ns)
                 self.assertEqual([node.text for node in numbers], ["123,456"])
-                self.assertIn("HF 下载量", svg)
+                self.assertIn("all-time downloads", svg)
 
     def seed_cards(self, destination):
         previous = {name: f"previous card: {name}" for name in stats.PALETTES}

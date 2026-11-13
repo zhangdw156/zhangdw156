@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="166" height="34" viewBox="0 0 166 34" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Google Scholar</title>
+  <desc id="desc">Dawei Zhang on Google Scholar.</desc>
+  <rect x=".5" y=".5" width="165" height="33" rx="6" fill="#0d1117" stroke="#3d444d" />
+  <!-- Google Scholar icon: https://simpleicons.org/?q=googlescholar -->
+  <path transform="translate(11 8) scale(.75)" fill="#79a7ff" d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z" />
+  <text x="37" y="21.5" fill="#e6edf3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="500">Google Scholar</text>
+  <path d="M146 12h7v7m0-7-8 8" stroke="#9198a1" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

@@ -5,12 +5,8 @@
 </p>
 
 <p align="left">
-  <a href="https://huggingface.co/zhangdw">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./profile-stats/huggingface-dark.svg" />
-      <img src="./profile-stats/huggingface.svg" width="467" alt="zhangdw · HF 下载量" />
-    </picture>
-  </a>
+  <a href="https://huggingface.co/zhangdw"><picture><source media="(prefers-color-scheme: dark)" srcset="./profile-stats/huggingface-dark.svg" /><img src="./profile-stats/huggingface.svg" width="280" alt="Hugging Face: zhangdw · all-time downloads" /></picture></a>
+  <a href="https://scholar.google.com/citations?user=d8Q7EwwAAAAJ&amp;hl=en"><picture><source media="(prefers-color-scheme: dark)" srcset="./profile-stats/google-scholar-dark.svg" /><img src="./profile-stats/google-scholar.svg" width="166" alt="Dawei Zhang on Google Scholar" /></picture></a>
 </p>
 
 <p align="left">

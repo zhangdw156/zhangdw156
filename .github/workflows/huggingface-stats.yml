@@ -14,7 +14,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: huggingface-stats
+  group: profile-stats
   cancel-in-progress: false
 
 jobs:

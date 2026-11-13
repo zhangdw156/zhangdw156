@@ -25,26 +25,16 @@ TEMPLATE = Path(__file__).with_name("huggingface-card.svg")
 OUTPUT_DIR = ROOT / "profile-stats"
 PALETTES = {
     "huggingface.svg": {
-        "background": "#fffefe",
-        "border": "#e4e2e2",
-        "heading": "#253247",
-        "muted": "#64748b",
-        "number": "#18263d",
-        "separator": "#edf0f4",
-        "glow": "#fff1c2",
-        "icon_bg": "#fff3cd",
-        "icon_fg": "#a56d13",
+        "background": "#ffffff",
+        "border": "#d1d9e0",
+        "heading": "#24292f",
+        "muted": "#59636e",
     },
     "huggingface-dark.svg": {
         "background": "#0d1117",
-        "border": "#30363d",
+        "border": "#3d444d",
         "heading": "#e6edf3",
-        "muted": "#9ba9b9",
-        "number": "#f0f6fc",
-        "separator": "#252b34",
-        "glow": "#332b18",
-        "icon_bg": "#332b18",
-        "icon_fg": "#f5c55b",
+        "muted": "#9198a1",
     },
 }
 
