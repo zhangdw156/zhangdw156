@@ -5,6 +5,15 @@
 </p>
 
 <p align="left">
+  <a href="https://huggingface.co/zhangdw">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./profile-stats/huggingface-dark.svg" />
+      <img src="./profile-stats/huggingface.svg" width="467" alt="zhangdw · HF 下载量" />
+    </picture>
+  </a>
+</p>
+
+<p align="left">
   <img src="./profile-stats/stats.svg" alt="GitHub stats" />
 </p>
 

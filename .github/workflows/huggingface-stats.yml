@@ -1,0 +1,56 @@
+name: Update Hugging Face downloads
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "37 * * * *"
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/huggingface-stats.yml
+      - scripts/**
+
+permissions:
+  contents: write
+
+concurrency:
+  group: huggingface-stats
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Verify download aggregation
+        run: python3 -B -m unittest discover -s scripts -p 'test_*.py'
+
+      - name: Generate Hugging Face cards
+        run: python3 scripts/update_hf_stats.py
+
+      - name: Commit updated cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile-stats/huggingface.svg profile-stats/huggingface-dark.svg
+
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+
+          git commit -m "Update Hugging Face downloads"
+
+          # The daily GitHub cards workflow may have updated main meanwhile.
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+          done
+
+          exit 1
